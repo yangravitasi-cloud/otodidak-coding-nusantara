@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Otodidak Coding Nusantara</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:Arial,sans-serif;
+  background:#0f172a;
+  color:#fff;
+  line-height:1.6;
+}
+nav{
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:#111827;
+  padding:16px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo{font-size:20px;font-weight:bold}
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:18px;
+}
+.hero{
+  min-height:85vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:40px 20px;
+  background:linear-gradient(135deg,#172554,#0f172a);
+}
+.hero h1{
+  font-size:clamp(35px,7vw,70px);
+  margin-bottom:20px;
+}
+.hero p{
+  max-width:700px;
+  margin:auto;
+  color:#cbd5e1;
+}
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:13px 22px;
+  border-radius:12px;
+  background:#2563eb;
+  color:white;
+  text-decoration:none;
+}
+section{
+  padding:70px 8%;
+}
+.title{
+  text-align:center;
+  margin-bottom:35px;
+  font-size:32px;
+}
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+.card{
+  background:#1e293b;
+  padding:25px;
+  border-radius:18px;
+  border:1px solid #334155;
+}
+.card h3{margin-bottom:10px}
+.card p{color:#cbd5e1}
+.about{
+  max-width:700px;
+  margin:auto;
+  background:#1e293b;
+  padding:30px;
+  border-radius:20px;
+}
+.about p{margin:8px 0}
+footer{
+  text-align:center;
+  padding:25px;
+  background:#020617;
+  color:#94a3b8;
+}
+@media(max-width:600px){
+  nav{flex-direction:column;gap:10px}
+  nav a{margin:0 7px}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">Otodidak Coding Nusantara</div>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#program">Program</a>
+    <a href="#sertifikat">Sertifikat</a>
+    <a href="#about">About</a>
+  </div>
+</nav>
+
+<section class="hero" id="home">
+  <div>
+    <h1>Otodidak Coding Nusantara</h1>
+    <p>
+      Kami memberikan apresiasi kepada anak-anak yang berminat
+      di bidang teknologi dan coding melalui program pembelajaran
+      serta penghargaan berupa sertifikat.
+    </p>
+    <a class="btn" href="#program">Lihat Program</a>
+  </div>
+</section>
+
+<section id="program">
+  <h2 class="title">Program Kami</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>💻 Belajar Coding</h3>
+      <p>
+        Mengenal dasar-dasar coding dan membuat berbagai
+        proyek sederhana secara otodidak.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🚀 Kreativitas</h3>
+      <p>
+        Mendorong peserta untuk membuat karya digital
+        sesuai minat dan kemampuan masing-masing.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🏆 Apresiasi</h3>
+      <p>
+        Peserta yang berpartisipasi dapat memperoleh
+        penghargaan berupa sertifikat.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="sertifikat">
+  <h2 class="title">Sertifikat Apresiasi</h2>
+
+  <div class="card" style="max-width:700px;margin:auto;text-align:center">
+    <h3>🏅 Sertifikat Peserta</h3>
+    <p style="margin-top:15px">
+      Sertifikat diberikan sebagai bentuk apresiasi
+      kepada peserta yang telah berpartisipasi dalam
+      program Otodidak Coding Nusantara.
+    </p>
+    <p style="margin-top:15px;color:#94a3b8">
+      Status resmi sertifikat bergantung pada penerbit
+      dan dokumen yang sebenarnya diterbitkan.
+    </p>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="title">Tentang Pembuat</h2>
+
+  <div class="about">
+    <p><strong>Nama:</strong> M. Alviansyah</p>
+    <p><strong>Usia:</strong> 17 tahun</p>
+    <p><strong>Kelas:</strong> X MAN 2 OKI</p>
+    <p><strong>Hobi:</strong> Bermain game, coding, editing</p>
+    <p><strong>Musik:</strong> Multo</p>
+    <p><strong>Fokus:</strong> Learning & Creating</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Otodidak Coding Nusantara
+</footer>
+
+</body>
+</html>
